@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "TalkingClock": {
+      "commandName": "Project",
+      "commandLineArgs": "print 16:01"
+    }
+  }
+}
