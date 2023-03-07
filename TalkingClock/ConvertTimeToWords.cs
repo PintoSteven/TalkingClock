@@ -29,7 +29,7 @@
         private string ConvertMinute(int minute)
         {
             minute = minute > 30 ? TotalMinutes - minute : minute;
-            var remainder = minute % 10;
+            var remainder = minute < 21 ? minute : minute % 10;
             return $"{minutes[(minute == 30 ? minute - 9 : minute) - remainder]} {minutes[remainder]}";
         }
     }
